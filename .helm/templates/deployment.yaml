@@ -24,7 +24,7 @@ spec:
               value: {{ .Chart.Name }}
             - name: REDIS_URI
               value: 'redis://{{ .Release.Name }}-redis-master'
-            - name: SHEET_ID
+            - name: SPREADSHEET_ID
               value: '{{ .Values.sheetId }}'
           ports:
             - containerPort: 3001
