@@ -20,7 +20,7 @@ class RoadmapService:
 
         scopes = ["https://www.googleapis.com/auth/drive",
                   "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/spreadsheets"]
-        secret_file = os.path.join(os.getcwd(), 'credentials.json')
+        secret_file = os.path.join(os.getcwd(), 'secret/credentials.json')
         credentials = service_account.Credentials.from_service_account_file(
             secret_file, scopes=scopes)
         self.service = discovery.build('sheets', 'v4', credentials=credentials)

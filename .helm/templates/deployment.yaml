@@ -29,3 +29,12 @@ spec:
           ports:
             - containerPort: 3001
               protocol: TCP
+          volumeMounts:
+            - name: secret-files
+              mountPath: "/app/secret"
+              readOnly: true              
+      volumes:
+        - name: secret-files
+          secret:
+            secretName: secret-files
+            optional: false
