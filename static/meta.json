@@ -1,0 +1,10 @@
+{
+  "id": "roadmaps",
+  "gameId": "all",
+  "name": "Roadmaps",
+  "github": "https://github.com/earnkeeper/ekp-roadmaps",
+  "image": "/static/market.jpg",
+  "mainPage": "roadmaps",
+  "description": "",
+  "features": ["Roadmaps"]
+}

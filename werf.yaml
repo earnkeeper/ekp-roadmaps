@@ -1,0 +1,6 @@
+configVersion: 1
+project: roadmaps
+---
+image: app
+dockerfile: Dockerfile.app
+context: .
